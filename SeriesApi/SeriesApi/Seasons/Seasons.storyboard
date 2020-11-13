@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Am-gJ-0h8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Seasons-->
+        <scene sceneID="dGa-wL-HcQ">
+            <objects>
+                <viewController id="XEi-bp-EEV" customClass="SeasonsViewController" customModule="SeriesApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lUU-e5-ah8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SBf-y4-1Wb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SeasonViewCell" id="a5a-6z-n9S" customClass="SeasonViewCell" customModule="SeriesApi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="75.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a5a-6z-n9S" id="9gh-aN-H6w">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7G-bd-lQ8">
+                                                    <rect key="frame" x="36" y="27" width="342" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="O7G-bd-lQ8" firstAttribute="leading" secondItem="9gh-aN-H6w" secondAttribute="leadingMargin" constant="16" id="0W7-kZ-O3g"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="O7G-bd-lQ8" secondAttribute="bottom" constant="16" id="4Nq-yP-wdt"/>
+                                                <constraint firstItem="O7G-bd-lQ8" firstAttribute="top" secondItem="9gh-aN-H6w" secondAttribute="topMargin" constant="16" id="KUm-7E-0Lp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="O7G-bd-lQ8" secondAttribute="trailing" constant="16" id="jMy-Yr-ddR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="numberseason" destination="O7G-bd-lQ8" id="XDH-v1-4lZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dlI-5H-PEk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SBf-y4-1Wb" firstAttribute="top" secondItem="dlI-5H-PEk" secondAttribute="top" id="6SI-Aa-mUl"/>
+                            <constraint firstItem="dlI-5H-PEk" firstAttribute="trailing" secondItem="SBf-y4-1Wb" secondAttribute="trailing" id="KqE-8v-8up"/>
+                            <constraint firstItem="SBf-y4-1Wb" firstAttribute="leading" secondItem="dlI-5H-PEk" secondAttribute="leading" id="QrS-xo-HwA"/>
+                            <constraint firstItem="dlI-5H-PEk" firstAttribute="bottom" secondItem="SBf-y4-1Wb" secondAttribute="bottom" id="UA6-Vq-hbN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Seasons" id="lBZ-mn-Z5f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5B-Da-rbn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1147.8260869565217" y="34.821428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="84b-JO-3wz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Am-gJ-0h8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LRL-NV-X0M">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XEi-bp-EEV" kind="relationship" relationship="rootViewController" id="x4Y-oH-Txi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mGZ-tI-jX1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237.68115942028987" y="34.821428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
