@@ -29,6 +29,20 @@ final class SeasonListViewController: UIViewController, UITableViewDelegate, UIT
         }
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let identifier = String(describing: EpisodeListViewController.self)
+        let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: identifier)
+        let season = seasons[indexPath.row]
+
+        if let episodeListViewController = viewController as? EpisodeListViewController {
+            episodeListViewController.season = season
+            episodeListViewController.movie = movie
+        }
+
+        navigationController?.pushViewController(viewController, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         seasons.count
     }
@@ -45,7 +59,6 @@ final class SeasonListViewController: UIViewController, UITableViewDelegate, UIT
 
         return cell
     }
-
 
     private func setupView() {
         if let movie = movie {

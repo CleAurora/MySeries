@@ -31,3 +31,10 @@ struct Season: Decodable {
     let name: String
     let summary: String?
 }
+
+struct Episode: Decodable {
+    let id: Int
+    let name: String
+    let number: Int?
+    let summary: String
+}

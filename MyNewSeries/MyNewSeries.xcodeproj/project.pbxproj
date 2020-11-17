@@ -15,6 +15,8 @@
 		4229E3392561D076000C4FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4229E3372561D076000C4FE9 /* LaunchScreen.storyboard */; };
 		4229E3432561D57E000C4FE9 /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4229E3422561D57E000C4FE9 /* MovieListTableViewCell.swift */; };
 		4229E3462561D697000C4FE9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4229E3452561D697000C4FE9 /* Movie.swift */; };
+		42A8A2D8256290EE003C7C35 /* EpisodeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A2D7256290EE003C7C35 /* EpisodeListTableViewCell.swift */; };
+		42A8A2DB25629200003C7C35 /* EpisodeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A2DA25629200003C7C35 /* EpisodeListViewController.swift */; };
 		42FD7B402561DF23000E3404 /* MovieDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD7B3F2561DF23000E3404 /* MovieDB.swift */; };
 		42FD7B432561E781000E3404 /* SeasonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD7B422561E781000E3404 /* SeasonListViewController.swift */; };
 		42FD7B462561E7BF000E3404 /* SeasonListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD7B452561E7BF000E3404 /* SeasonListTableViewCell.swift */; };
@@ -33,6 +35,8 @@
 		4229E33A2561D076000C4FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4229E3422561D57E000C4FE9 /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
 		4229E3452561D697000C4FE9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		42A8A2D7256290EE003C7C35 /* EpisodeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListTableViewCell.swift; sourceTree = "<group>"; };
+		42A8A2DA25629200003C7C35 /* EpisodeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListViewController.swift; sourceTree = "<group>"; };
 		42FD7B3F2561DF23000E3404 /* MovieDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDB.swift; sourceTree = "<group>"; };
 		42FD7B422561E781000E3404 /* SeasonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonListViewController.swift; sourceTree = "<group>"; };
 		42FD7B452561E7BF000E3404 /* SeasonListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonListTableViewCell.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				42FD7B422561E781000E3404 /* SeasonListViewController.swift */,
 				42FD7B452561E7BF000E3404 /* SeasonListTableViewCell.swift */,
 				42FD7B482561EECA000E3404 /* UIViewController+Error.swift */,
+				42A8A2D7256290EE003C7C35 /* EpisodeListTableViewCell.swift */,
+				42A8A2DA25629200003C7C35 /* EpisodeListViewController.swift */,
 			);
 			path = MyNewSeries;
 			sourceTree = "<group>";
@@ -223,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A8A2DB25629200003C7C35 /* EpisodeListViewController.swift in Sources */,
 				42FD7B462561E7BF000E3404 /* SeasonListTableViewCell.swift in Sources */,
+				42A8A2D8256290EE003C7C35 /* EpisodeListTableViewCell.swift in Sources */,
 				42FD7B402561DF23000E3404 /* MovieDB.swift in Sources */,
 				4229E3312561D074000C4FE9 /* MovieListViewController.swift in Sources */,
 				42FD7B492561EECA000E3404 /* UIViewController+Error.swift in Sources */,
